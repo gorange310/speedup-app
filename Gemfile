@@ -18,7 +18,7 @@ gem 'kaminari'
 gem 'jquery-rails'
 gem 'bootstrap-sass'
 
-gem 'devise'
+gem 'devise', '~> 4.4.0'
 
 gem 'faker'
 
