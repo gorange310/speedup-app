@@ -11,7 +11,7 @@
     <tr>
       <td><%= link_to post.title, post_path(post) %></td>
       <td><%= post.user.display_name %></td>
-      <td><%= post.comments.map{ |comment| comment.user.display_name }.join(',') %></td>
+      <td><%= post.visible_comments.map{ |comment| comment.user.display_name }.join(',') %></td>
       <td><%= post.liked_users.map{ |user| user.display_name }.join(',') %></td>
     </tr>
   <% end %>
